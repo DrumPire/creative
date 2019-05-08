@@ -69,18 +69,31 @@ h3::before{
 .content_text{
     display: block;
     font-family: Arial, sans-serif;
-    padding-top: 5px;
     font-size: 12px;
 }
-.content_text p{
-    padding-top: 5px;
+.content_text h2{
+    margin-bottom: 20px;
+}
+.content_text li{
+    list-style: none;
+    position: relative;
+    margin-bottom: 20px;
+    padding-left: 30px;
     color: var(--secondary);
+}
+.content_text p{
+        color: var(--secondary);
 }
 .content_text font::before{
     content: '\2714';
-    width: 12px;
-    height: 12px;
-    background-color: var(--secondary);
+    width: 16px;
+    height: 16px;
+    display: flex;
+    left: 0;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    background-color: #cbcbcb;
     color: black;
 }
 .content_text a{
@@ -352,12 +365,17 @@ h3::before{
     width: 100%;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
+    flex-wrap: wrap;
     margin: 0 auto;
 }
 .footer-text {
     max-width: 450px;
     width: 100%;
+}
+.footer-text p{
+    text-align: center;
+    padding-top: 10px;
 }
 .footer-text p a{
     padding-top: 15px;
@@ -427,9 +445,17 @@ h3::before{
         display: flex;
         flex-direction: column;
     }
+    .footer-wrap{
+        justify-content: space-between;
+    }
+    .footer-wrap p{
+        text-align: left;
+    }
     .pre-footer-text {
         width: 100%;
-        margin-bottom: 40px;
+        margin: 0 0 45px;
+        padding-left: 0;
+        padding-top: 30px;
     }
     .pre-footer-contacts {
         margin-bottom: 40px;
